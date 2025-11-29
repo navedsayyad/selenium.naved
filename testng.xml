@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/naved/IdeaProjects/selenium.naved">
+        <classes>
+            <class name="EPAM.Getalllinks">
+                <methods>
+                    <include name="links"/>
+                </methods>
+            </class>
+            <class name="EPAM.Titles">
+                <methods>
+                    <include name="getalltitles"/>
+                </methods>
+            </class>
+            <class name="excelfilereading.DataProviderExample">
+                <methods>
+                    <include name="LoginTest"/>
+                </methods>
+            </class>
+            <class name="excelfilereading.DataTestProvider">
+                <methods>
+                    <include name="testdata"/>
+                </methods>
+            </class>
+            <class name="excelfilereading.ExcelRead">
+                <methods>
+                    <include name="getExtractInfo"/>
+                </methods>
+            </class>
+            <class name="test.Assertion">
+                <methods>
+                    <include name="AssertMet"/>
+                </methods>
+            </class>
+            <class name="test.DataProv">
+                <methods>
+                    <include name="usertest"/>
+                </methods>
+            </class>
+            <class name="test.ExplicitWait">
+                <methods>
+                    <include name="explicitwait"/>
+                </methods>
+            </class>
+            <class name="test.OtherClass">
+                <methods>
+                    <include name="second"/>
+                </methods>
+            </class>
+            <class name="test.Practice">
+                <methods>
+                    <include name="am"/>
+                </methods>
+            </class>
+            <class name="test.Testngpractice">
+                <methods>
+                    <include name="testmethod"/>
+                    <include name="testngpractice"/>
+                    <include name="testmethod1"/>
+                    <include name="iFrame"/>
+                    <include name="dropdown"/>
+                    <include name="printf"/>
+                    <include name="jsexec"/>
+                </methods>
+            </class>
+            <class name="testClasses.LoginTestStatic">
+                <methods>
+                    <include name="loginTest"/>
+                    <include name="loginTest1"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
