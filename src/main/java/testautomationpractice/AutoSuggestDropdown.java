@@ -12,17 +12,19 @@ import java.util.List;
 
 public class AutoSuggestDropdown {
     @Test()
-    public void autosuggestdropdown(){
+    public void autosuggestdropdown() {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.get("https://www.google.com/");
+
         driver.findElement(By.xpath("//textarea[@name='q']")).sendKeys("selenium");
         List<WebElement> options = driver.findElements(By.xpath("//ul[@role='listbox']//li//div[@role='option']"));
         System.out.println("Size of options : " + options.size());
-        for(int i=0; i <= options.size(); i++ ){
+
+        for (int i = 0; i <= options.size(); i++) {
             System.out.println(options.get(i).getText());
-            if(options.get(i).getText().equals("selenium")){
+            if (options.get(i).getText().equals("selenium")) {
                 options.get(i).click();
                 break;
             }

@@ -1,4 +1,4 @@
-package testautomationpractice.dynamictable;
+package testautomationpractice;
 
 import webdrivermanager.GetDriver;
 import org.openqa.selenium.By;
